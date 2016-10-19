@@ -4,6 +4,7 @@ class VariantChecker
 		@me = _me
 		@count = numbers_count
 		@my_numbers = @me.to_s(2).split(//).last(@count).join
+    puts "me: #{@me.to_s 2 } (ip-#{@me}), last numbers are: #{@my_numbers}"
 	end
   def check
     array = []

@@ -11,8 +11,7 @@ class MyApp < Sinatra::Base
 	end
 
 	post '/' do
-		students = VariantChecker.new(params[:number], params[:count]).check
-		puts VariantChecker
+		students = VariantChecker.new(params[:number].to_i, params[:count].to_i).check
 		haml :index, locals: { students: students }
 	end
 

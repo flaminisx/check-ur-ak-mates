@@ -21,9 +21,12 @@
             %input.form-control{ type: "number", name: "count"}
             %br
             %button.btn.btn-success Count
-      - if !students.nil? && !student.empty?
+      %br
+      - if !students.nil? && !students.empty?
         .row
           .col-xs-12.col-md-10.col-lg-4.col-lg-offset-4
             %ul.list-group
               - students.each do |student|
-                %li.list-group-item.row -student
+                %li.list-group-item.row
+                  .col-xs-6=student
+                  .col-xs-6=student.to_s 2
