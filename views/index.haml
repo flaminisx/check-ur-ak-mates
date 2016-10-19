@@ -25,6 +25,7 @@
       - if !students.nil? && !students.empty?
         .row
           .col-xs-12.col-md-10.col-lg-4.col-lg-offset-4
+            %p="for you (ip#{you}) found #{students.count} results with same last #{count} chars: "
             %ul.list-group
               - students.each do |student|
                 %li.list-group-item.row
