@@ -3,16 +3,3 @@ html, body{
   height: 100%;
   overflow: hidden;
 }
-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.container {
-  width: 60%;
-  height: 40%;
-  box-shadow: 0 0 10px 1px #000;
-  padding: 10px;
-  text-align: center;
-}
